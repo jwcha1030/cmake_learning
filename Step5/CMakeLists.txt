@@ -8,7 +8,6 @@ project(Tutorial VERSION 2.0)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-
 #STEP2: make the MathFunctions library optional. Add an option to the top-level of this file.
 #This option will be displayed in the cmake-gui and ccmake with a default value of ON that can be changed by the user.
 #This setting will be stored in the cache so that the user does not need to set the value each time they run CMake.

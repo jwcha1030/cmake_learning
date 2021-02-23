@@ -1,0 +1,226 @@
+Start testing: Feb 23 19:10 KST
+----------------------------------------------------------
+1/9 Testing: Runs
+1/9 Test: Runs
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "25"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Runs" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+Iteration 0: Computing sqrt of 25 to be 13
+Iteration 1: Computing sqrt of 25 to be 7.46154
+Iteration 2: Computing sqrt of 25 to be 5.40603
+Iteration 3: Computing sqrt of 25 to be 5.01525
+Iteration 4: Computing sqrt of 25 to be 5.00002
+Iteration 5: Computing sqrt of 25 to be 5
+Iteration 6: Computing sqrt of 25 to be 5
+Iteration 7: Computing sqrt of 25 to be 5
+Iteration 8: Computing sqrt of 25 to be 5
+Iteration 9: Computing sqrt of 25 to be 5
+The square root of 25 is 5
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Runs" end time: Feb 23 19:10 KST
+"Runs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/9 Testing: Usage
+2/9 Test: Usage
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Usage" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial Version 2.0
+Usage: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial number
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[Usage:.*number]
+"Usage" end time: Feb 23 19:10 KST
+"Usage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/9 Testing: Comp4
+3/9 Test: Comp4
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "4"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Comp4" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+Iteration 0: Computing sqrt of 4 to be 2.5
+Iteration 1: Computing sqrt of 4 to be 2.05
+Iteration 2: Computing sqrt of 4 to be 2.00061
+Iteration 3: Computing sqrt of 4 to be 2
+Iteration 4: Computing sqrt of 4 to be 2
+Iteration 5: Computing sqrt of 4 to be 2
+Iteration 6: Computing sqrt of 4 to be 2
+Iteration 7: Computing sqrt of 4 to be 2
+Iteration 8: Computing sqrt of 4 to be 2
+Iteration 9: Computing sqrt of 4 to be 2
+The square root of 4 is 2
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[4 is 2]
+"Comp4" end time: Feb 23 19:10 KST
+"Comp4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/9 Testing: Comp9
+4/9 Test: Comp9
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "9"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Comp9" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+Iteration 0: Computing sqrt of 9 to be 5
+Iteration 1: Computing sqrt of 9 to be 3.4
+Iteration 2: Computing sqrt of 9 to be 3.02353
+Iteration 3: Computing sqrt of 9 to be 3.00009
+Iteration 4: Computing sqrt of 9 to be 3
+Iteration 5: Computing sqrt of 9 to be 3
+Iteration 6: Computing sqrt of 9 to be 3
+Iteration 7: Computing sqrt of 9 to be 3
+Iteration 8: Computing sqrt of 9 to be 3
+Iteration 9: Computing sqrt of 9 to be 3
+The square root of 9 is 3
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[9 is 3]
+"Comp9" end time: Feb 23 19:10 KST
+"Comp9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/9 Testing: Comp5
+5/9 Test: Comp5
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "5"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Comp5" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+Iteration 0: Computing sqrt of 5 to be 3
+Iteration 1: Computing sqrt of 5 to be 2.33333
+Iteration 2: Computing sqrt of 5 to be 2.2381
+Iteration 3: Computing sqrt of 5 to be 2.23607
+Iteration 4: Computing sqrt of 5 to be 2.23607
+Iteration 5: Computing sqrt of 5 to be 2.23607
+Iteration 6: Computing sqrt of 5 to be 2.23607
+Iteration 7: Computing sqrt of 5 to be 2.23607
+Iteration 8: Computing sqrt of 5 to be 2.23607
+Iteration 9: Computing sqrt of 5 to be 2.23607
+The square root of 5 is 2.23607
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[5 is 2.236]
+"Comp5" end time: Feb 23 19:10 KST
+"Comp5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/9 Testing: Comp7
+6/9 Test: Comp7
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "7"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Comp7" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+Iteration 0: Computing sqrt of 7 to be 4
+Iteration 1: Computing sqrt of 7 to be 2.875
+Iteration 2: Computing sqrt of 7 to be 2.65489
+Iteration 3: Computing sqrt of 7 to be 2.64577
+Iteration 4: Computing sqrt of 7 to be 2.64575
+Iteration 5: Computing sqrt of 7 to be 2.64575
+Iteration 6: Computing sqrt of 7 to be 2.64575
+Iteration 7: Computing sqrt of 7 to be 2.64575
+Iteration 8: Computing sqrt of 7 to be 2.64575
+Iteration 9: Computing sqrt of 7 to be 2.64575
+The square root of 7 is 2.64575
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[7 is 2.645]
+"Comp7" end time: Feb 23 19:10 KST
+"Comp7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/9 Testing: Comp25
+7/9 Test: Comp25
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "25"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Comp25" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+Iteration 0: Computing sqrt of 25 to be 13
+Iteration 1: Computing sqrt of 25 to be 7.46154
+Iteration 2: Computing sqrt of 25 to be 5.40603
+Iteration 3: Computing sqrt of 25 to be 5.01525
+Iteration 4: Computing sqrt of 25 to be 5.00002
+Iteration 5: Computing sqrt of 25 to be 5
+Iteration 6: Computing sqrt of 25 to be 5
+Iteration 7: Computing sqrt of 25 to be 5
+Iteration 8: Computing sqrt of 25 to be 5
+Iteration 9: Computing sqrt of 25 to be 5
+The square root of 25 is 5
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[25 is 5]
+"Comp25" end time: Feb 23 19:10 KST
+"Comp25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/9 Testing: Comp-25
+8/9 Test: Comp-25
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "-25"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Comp-25" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+The square root of -25 is 0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[-25 is [-nan|nan|0]]
+"Comp-25" end time: Feb 23 19:10 KST
+"Comp-25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/9 Testing: Comp0.0001
+9/9 Test: Comp0.0001
+Command: "/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/Tutorial" "0.0001"
+Directory: /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+"Comp0.0001" start time: Feb 23 19:10 KST
+Output:
+----------------------------------------------------------
+Iteration 0: Computing sqrt of 0.0001 to be 0.50005
+Iteration 1: Computing sqrt of 0.0001 to be 0.250125
+Iteration 2: Computing sqrt of 0.0001 to be 0.125262
+Iteration 3: Computing sqrt of 0.0001 to be 0.0630304
+Iteration 4: Computing sqrt of 0.0001 to be 0.0323084
+Iteration 5: Computing sqrt of 0.0001 to be 0.0177018
+Iteration 6: Computing sqrt of 0.0001 to be 0.0116755
+Iteration 7: Computing sqrt of 0.0001 to be 0.0101202
+Iteration 8: Computing sqrt of 0.0001 to be 0.0100007
+Iteration 9: Computing sqrt of 0.0001 to be 0.01
+The square root of 0.0001 is 0.01
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found. Regex=[0.0001 is 0.01]
+"Comp0.0001" end time: Feb 23 19:10 KST
+"Comp0.0001" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 23 19:10 KST

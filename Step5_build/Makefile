@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4
+CMAKE_SOURCE_DIR = /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build
+CMAKE_BINARY_DIR = /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step5_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -156,14 +156,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/CMakeFiles /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/MathFunctions//CMakeFiles/progress.marks
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step5_build/CMakeFiles /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step5_build//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step5_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/clean
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -173,60 +173,71 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/preinstall
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-MathFunctions/CMakeFiles/MathFunctions.dir/rule:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/rule
-.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
+#=============================================================================
+# Target rules for targets named Tutorial
 
-# Convenience name for target.
-MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
+# Build rule for target.
+Tutorial: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tutorial
+.PHONY : Tutorial
 
+# fast build rule for target.
+Tutorial/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
+.PHONY : Tutorial/fast
+
+#=============================================================================
+# Target rules for targets named MathFunctions
+
+# Build rule for target.
+MathFunctions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions
 .PHONY : MathFunctions
 
 # fast build rule for target.
 MathFunctions/fast:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
 
-mysqrt.o: mysqrt.cxx.o
+tutorial.o: tutorial.cxx.o
 
-.PHONY : mysqrt.o
+.PHONY : tutorial.o
 
 # target to build an object file
-mysqrt.cxx.o:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
-.PHONY : mysqrt.cxx.o
+tutorial.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.o
+.PHONY : tutorial.cxx.o
 
-mysqrt.i: mysqrt.cxx.i
+tutorial.i: tutorial.cxx.i
 
-.PHONY : mysqrt.i
+.PHONY : tutorial.i
 
 # target to preprocess a source file
-mysqrt.cxx.i:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.i
-.PHONY : mysqrt.cxx.i
+tutorial.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.i
+.PHONY : tutorial.cxx.i
 
-mysqrt.s: mysqrt.cxx.s
+tutorial.s: tutorial.cxx.s
 
-.PHONY : mysqrt.s
+.PHONY : tutorial.s
 
 # target to generate assembly for a file
-mysqrt.cxx.s:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.s
-.PHONY : mysqrt.cxx.s
+tutorial.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.s
+.PHONY : tutorial.cxx.s
 
 # Help Target
 help:
@@ -242,9 +253,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... MathFunctions"
-	@echo "... mysqrt.o"
-	@echo "... mysqrt.i"
-	@echo "... mysqrt.s"
+	@echo "... Tutorial"
+	@echo "... tutorial.o"
+	@echo "... tutorial.i"
+	@echo "... tutorial.s"
 .PHONY : help
 
 
@@ -256,6 +268,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step4_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
