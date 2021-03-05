@@ -1,0 +1,8 @@
+//the configured options and settings for Tutorial
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+/*when CMake configures this header file the values for @Tutorial_VERSION_MAJOR@ and 
+@Tutorial_VERSION_MINOR@ will be replaced.*/
+
+//STEP2: Source code now requires USE_MYMATH (defined in CMakeLists.txt).
+#cmakedefine USE_MYMATH

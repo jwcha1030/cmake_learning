@@ -9,7 +9,7 @@ target_include_directories(MathFunctions INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 install(TARGETS MathFunctions DESTINATION lib)
 install(FILES MathFunctions.h DESTINATION include)
 
-#STEP6: check to see if the platform has log and exp via CheckSymbolExists module
+#STEP5: check to see if the platform has log and exp via CheckSymbolExists module
 #On some platforms, we'll link to the m library. If log and exp aren't found, require the m library and try again.
 include(CheckSymbolExists)
 #check_symbol_exists(<symbol> <files> <variable>)

@@ -7,6 +7,8 @@ double mysqrt(double x)
     return 0;
   }
   double result = x;
+  std::cout << "===Running mysqrt()===" << std::endl;
+
   //Newton Raphson method: f(x)= x^2 - N where N is the number whose square root is to be obtained
   //find the root of f(x)=0.
   // Let x1=N/2, x_(n+1)=x_n - f(x_n)/f'(x_n)

@@ -130,16 +130,36 @@ Tests can also be run in parallel using given number of jobs:
 $ ctest -R Qt -j8
 ```
 The environment variable `CTEST_PARALLEL_LEVEL` can alternatively be set to avoid the need to pass `-j`. The command line argument `-V` or `--verbose` prints the output from all tests. The `--output-on-failure` option prints the test output for failing test only, which can also be set to 1 in the environment variable `CTEST_OUTPUT_ON_FAILURE` as an alternative to passing the option.
-## IV. Starting Point
-Create a `CMakeLists.txt` file in the `Step1` directory that looks like:
+
+## III. Commands Used Commonly Used
+> Check <a href="https://cmake.org/cmake/help/latest/manual/cmake-commands.7.html">cmake-commands</a> for scripting commands list.
+
+`add_executable`
+```cmake 
+add_executable(<name> [WIN32] [MACOSX_BUNDLE] [EXCLUDE_FROM_ALL] [source1] [source2 ...])
 ```
-cmake_minimum_required(VERSION 3.6)
+- adds an executable target called `<name>` to be built from the source files listed in the command invocation. `<name>` corresponds to the logical target name and must be golobally unique within a project. The actual file name of the executable built is made based on the conventions of the native platform (sucha as `<name>.exe` or `<name>`). For more details see [here](https://cmake.org/cmake/help/latest/command/add_executable.html).
 
-# set the project name
-project(Tutorial)
-
-#add the executable
-add_executable(Tutorial tutorial.cxx)
+`target_link_libraries`
+```cmake
+target_link_libraries(<target> ... <item> ...)
 ```
+- specifies libraries or flags to use when linking a given target and/or its dependents. The name `<target>` must have been created by a command such as `add_executable()` or `add_library()` and must not be an ALIAS target. See more details [here](https://cmake.org/cmake/help/latest/command/target_link_libraries.html)
 
-The source code for tutorial.cxx is provided in the `Step1` directory and can be used to compute the square root of a number.
+`add_custom_command`
+```cmake
+add_custom_command(OUTPUT output1 [output2 ...]
+                   COMMAND command1 [ARGS] [args1...]
+                   [COMMAND command2 [ARGS] [args2...] ...]
+                   [MAIN_DEPENDENCY depend]
+                   [DEPENDS [depends...]]
+                   [BYPRODUCTS [files...]]
+                   [IMPLICIT_DEPENDS <lang1> depend1
+                                    [<lang2> depend2] ...]
+                   [WORKING_DIRECTORY dir]
+                   [COMMENT comment]
+                   [DEPFILE depfile]
+                   [JOB_POOL job_pool]
+                   [VERBATIM] [APPEND] [USES_TERMINAL]
+                   [COMMAND_EXPAND_LISTS])
+```

@@ -9,8 +9,6 @@
 /mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Step1/tutorial.cxx
 cmath
 -
-cstdlib
--
 iostream
 -
 string
