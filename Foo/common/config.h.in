@@ -1,0 +1,2 @@
+#cmakedefine PATH_DATA "${PATH_DATA}"
+#cmakedefine THIRDPARTIES_PATH "@THIRDPARTIES_PATH@"

@@ -1,0 +1,4 @@
+/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Foo/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Foo/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Foo/build/CMakeFiles/app.dir
+/mnt/c/Users/jwcha/rtos/testApp/cmake_paractice/Foo/build/CMakeFiles/foo.dir
